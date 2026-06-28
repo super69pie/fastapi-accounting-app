@@ -15,13 +15,15 @@
 3. **資料庫 (Database)**: 透過 Docker Compose 建立獨立的 MySQL 容器，確保本地開發環境乾淨。
 
 ## 📦 如何在本地端執行此專案
-
+```bash
 ### 1. 啟動資料庫 (Docker)
 確保電腦已安裝並啟動 Docker Desktop，在根目錄執行：
-```bash
 docker-compose up -d
+
 2.安裝 Python 套件
 pip install -r requirements.txt
+
 3. 啟動 FastAPI 後端伺服器
 python -m uvicorn main:app --reload
+
 4.啟動後打開瀏覽器輸入 http://127.0.0.1:8000 即可開始記帳。
