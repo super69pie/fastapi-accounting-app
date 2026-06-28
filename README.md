@@ -20,3 +20,6 @@
 確保電腦已安裝並啟動 Docker Desktop，在根目錄執行：
 ```bash
 docker-compose up -d
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
+http://127.0.0.1:8000
