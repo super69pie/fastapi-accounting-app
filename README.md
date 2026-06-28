@@ -20,6 +20,8 @@
 確保電腦已安裝並啟動 Docker Desktop，在根目錄執行：
 ```bash
 docker-compose up -d
+2.安裝 Python 套件
 pip install -r requirements.txt
+3. 啟動 FastAPI 後端伺服器
 python -m uvicorn main:app --reload
-http://127.0.0.1:8000
+4.啟動後打開瀏覽器輸入 http://127.0.0.1:8000 即可開始記帳。
